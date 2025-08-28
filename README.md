@@ -38,15 +38,51 @@
 
 ---
 
-## 📸 Screenshot
+## Table of Contents
+<details>
+  <summary>Expand</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#screenshot">Screenshot</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#tech-stack">Tech Stack</a></li>
+    <li><a href="#project-structure">Project Structure</a></li>
+    <li><a href="#live-demo">Live Demo</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#responsive-behavior">Responsive Behavior</a></li>
+    <li><a href="#whats-next-moving-to-data-driven-react">What’s Next</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#accessibility-notes">Accessibility Notes</a></li>
+    <li><a href="#scripts">Scripts</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
+
+---
+
+## About The Project
+
+This is a small, clean travel journal app built as a prelude to a data‑driven React refactor. The goal was to perfect the markup, layout, and accessibility first, then evolve it into a reusable component that renders from data.
+
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
+---
+
+## Screenshot
 
 <p align="center">
   <img src="src/assets/screenshot.png" alt="App Screenshot" width="720">
 </p>
 
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
 ---
 
-## ✨ Features
+## Features
 
 - Three journal entries (Japan – Mount Fuji, Australia – Sydney Opera House, Norway – Geirangerfjord)
 - Semantic, accessible markup (headings, links, and readable date formatting)
@@ -54,17 +90,21 @@
 - Image optimization via Vite asset handling
 - Simple, minimal CSS with a focus on readability
 
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Frontend:** React 19 + Vite
 - **Styling:** Plain CSS (mobile-friendly media queries)
 - **Tooling:** ESLint (optional)
 
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ```
 project-root/
@@ -98,15 +138,19 @@ import japanImg from '../assets/japan-img.png'
 <img src={japanImg} alt="Mount Fuji" />
 ```
 
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
 ---
 
-## 🧭 Live Demo
+## Live Demo
 
 - **Netlify:** https://travel-journal-demo.netlify.app
 
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
 ---
 
-## 🛠 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18+ (recommended)
@@ -126,9 +170,23 @@ npm run build
 npm run preview
 ```
 
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
 ---
 
-## 📐 Responsive Behavior
+## Usage
+
+- Add or edit entries directly in `Entry.jsx` (static version).  
+- Assets are imported from `src/assets` so they are fingerprinted by Vite.  
+- To keep paths working on Netlify, import images (recommended) or place them in `/public` and reference with root paths (`/images/...`).
+
+> **Next step:** convert to a data‑driven `<EntryCard />` and render an array of entries. See **What’s Next** below.
+
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
+---
+
+## Responsive Behavior
 
 - **Desktop:** two-column card (image + content), capped text width for readability.
 - **≤ 768px (tablet):** cards stack vertically; images shrink.
@@ -136,9 +194,11 @@ npm run preview
 
 Media queries live in `App.css`.
 
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
 ---
 
-## 🔜 What’s Next: Moving to Data‑Driven React
+## What’s Next: Moving to Data‑Driven React
 
 This project was intentionally completed **right before** a data‑driven refactor. Building the static version first helps you:
 
@@ -160,17 +220,35 @@ export const entries = [
 {entries.map(e => <EntryCard key={e.title} {...e} />)}
 ```
 
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
 ---
 
-## ♿ Accessibility Notes
+## Roadmap
+
+- [x] Static journal entries and layout  
+- [x] Responsive breakpoints for tablet/phone  
+- [x] Netlify deployment  
+- [ ] Extract `<EntryCard />` component  
+- [ ] Render entries from a data array  
+- [ ] Add theme switch (dark/light)  
+- [ ] Add tests for layout regressions
+
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
+---
+
+## Accessibility Notes
 
 - Meaningful `alt` text for photos; decorative icons use `alt=""`.
 - Proper heading order (`h1` in the header, `h2` per entry).
 - Links are descriptive (“View on Google Maps”).
 
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
 ---
 
-## 🧹 Scripts
+## Scripts
 
 ```json
 {
@@ -181,18 +259,44 @@ export const entries = [
 }
 ```
 
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Open issues and PRs are welcome!  
 https://github.com/codingmaniac227/Project-Travel-Journal/issues
 
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
 ---
 
-## 📄 License
+## Contact
+
+Marquise Davis – <a href="https://instagram.com/FullStackDemon" target="_blank" rel="noopener">@FullStackDemon</a>  
+codingmaniac227@gmail.com  
+Project Link: <a href="https://github.com/codingmaniac227/Project-Travel-Journal" target="_blank" rel="noopener">https://github.com/codingmaniac227/Project-Travel-Journal</a>
+
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
+---
+
+## Acknowledgments
+
+- React + Vite community
+- Netlify for quick deploys
+- Everyone who shares CSS layout tips and accessibility guidance
+
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
+
+---
+
+## License
 
 MIT — feel free to reuse with attribution.
+
+<p align="right">(<a href="#project-travel-journal">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/codingmaniac227/Project-Travel-Journal?style=for-the-badge
