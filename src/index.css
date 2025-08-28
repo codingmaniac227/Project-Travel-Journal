@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+header {
+    background: #F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 55px;
+}
+
+header > img {
+    width: 24px;
+    margin-right: 7px;
+}
+
+header > h1 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: Inter;
+}
+
+/* main content */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem;
+    gap: 2rem;
+}
+
+
+article {
+    display: flex;
+    gap: 1.188rem;
+    align-items: center;
+}
+
+
+/* HEADER SECTIONS */
+.mt-fuji-section-header {
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+.sydney-opera-section-header {
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+.geirangerfjord-section-header {
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+
+/* IMAGE SECTION */ 
+.icon-img {
+    height: 10px;
+    width: 7px;
+    align-self: center;
+}
+
+.location-img {
+    width: 125px;
+    height: auto;
+    object-fit: cover;
+}
+
+.mt-fuji-section, .sydney-opera-section, .geirangerfjord-section {
+    width: 600px;
+}
+
+
+
+/* MARGIN AND PADDINGS */
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-top: 0.2rem;
+}
+
+
+
+/* Tablets (<= 768px) */
+@media (max-width: 768px) {
+  main {
+    text-align: center;
+    align-items: center;
+  }
+
+  article {
+    flex-direction: column;     /* stack vertically */
+    align-items: flex-start;
+  }
+
+  .location-img {
+    align-self: center;
+    width: 150px;                /* smaller width */
+    height: 200px;               /* let height scale naturally */
+    margin-bottom: 0.5rem;      /* add a little spacing under the image */
+  }
+}
+
+/* Phones (<= 480px) */
+@media (max-width: 480px) {
+  .location-img {
+    width: 75px;                /* even smaller for narrow screens */
+    height: auto;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+/* LINKS */
+.google-maps-link {
+    color: #918E9B;
+}
