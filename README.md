@@ -1,33 +1,35 @@
 # Project Travel Journal
 
 <!-- PROJECT SHIELDS -->
-<p align="center">
-  <a href="[contributors-url]"><img src="[contributors-shield]" alt="Contributors"></a>
-  <a href="[forks-url]"><img src="[forks-shield]" alt="Forks"></a>
-  <a href="[stars-url]"><img src="[stars-shield]" alt="Stargazers"></a>
-  <a href="[issues-url]"><img src="[issues-shield]" alt="Issues"></a>
-  <a href="[demo-url]"><img src="[demo-shield]" alt="Demo Status"></a>
-  <a href="[linkedin-url]"><img src="[linkedin-shield]" alt="LinkedIn"></a>
-</p>
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Demo][demo-shield]][demo-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-<p align="center">
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
   <a href="https://github.com/codingmaniac227/Project-Travel-Journal">
-    <img src="logo.png" alt="Logo" width="90" height="90" style="border-radius:50%">
+    <img src="src/assets/logo.png" alt="Logo" width="90" height="90" style="border-radius:50%">
   </a>
-</p>
 
-<p align="center">
-  A clean, responsive travel journal built with React + Vite.
-  <br />
-  <a href="https://github.com/codingmaniac227/Project-Travel-Journal"><strong>Explore the repo »</strong></a>
-  <br />
-  <br />
-  <a href="https://travel-journal-demo.netlify.app">View Demo</a>
-  ·
-  <a href="https://github.com/codingmaniac227/Project-Travel-Journal/issues">Report Bug</a>
-  ·
-  <a href="https://github.com/codingmaniac227/Project-Travel-Journal/issues">Request Feature</a>
-</p>
+  <h3 align="center">Project Travel Journal</h3>
+
+  <p align="center">
+    A clean, responsive travel journal built with React + Vite.
+    <br />
+    <a href="https://github.com/codingmaniac227/Project-Travel-Journal"><strong>Explore the repo »</strong></a>
+    <br />
+    <br />
+    <a href="https://travel-journal-demo.netlify.app">View Demo</a>
+    ·
+    <a href="https://github.com/codingmaniac227/Project-Travel-Journal/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/codingmaniac227/Project-Travel-Journal/issues">Request Feature</a>
+  </p>
+</div>
 
 <p align="center">
   <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"></a>
@@ -38,7 +40,9 @@
 
 ## 📸 Screenshot
 
-![App Screenshot](screenshot.png)
+<p align="center">
+  <img src="src/assets/screenshot.png" alt="App Screenshot" width="720">
+</p>
 
 ---
 
@@ -71,7 +75,9 @@ project-root/
 │  │  ├─ japan-img.png
 │  │  ├─ australia-img.png
 │  │  ├─ norway-img.png
-│  │  └─ location-icon.svg
+│  │  ├─ location-icon.svg
+│  │  ├─ logo.png
+│  │  └─ screenshot.png
 │  ├─ components/
 │  │  ├─ Header.jsx
 │  │  └─ Entry.jsx          ← renders the three cards
@@ -79,9 +85,8 @@ project-root/
 │  ├─ App.css               ← core styles & media queries
 │  ├─ index.css
 │  └─ main.jsx
-├─ screenshot.png
-├─ logo.png
-└─ package.json
+├─ package.json
+└─ README.md
 ```
 
 > **Note on assets:** images are imported from `src/assets` so that Vite can fingerprint/optimize them at build time.
